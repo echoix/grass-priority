@@ -13,7 +13,7 @@ jobs:
       with:
         repos: >-
           echoix/grass
-        github-token: ${{ github.token }} # must have read access to `repos`
+        github-token: ${{ secrets.GRASS_PRIORITY_PAT }} # must have read access to `repos`
         weight_activity: 14   # weight for number of comments
         weight_reactions: 7   # weight for reactions to original issue
         weight_staleness: 1   # weight for days of inactivity
